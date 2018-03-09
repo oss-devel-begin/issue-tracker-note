@@ -13,3 +13,11 @@ $ sudo apt-get install git git-core
 - github
 - try git
  
+
+### git ±âº»
+
+- $git remote add upstream [url]
+- $git fetch upstream
+- $git branch -a
+- $git merge upstream/master
+- $git push origin master
