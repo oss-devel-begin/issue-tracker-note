@@ -118,3 +118,35 @@ Media
 Script
 > bash
 
+#프로그램 찾을 때 중요한 것 :
+>1. Document가 얼마나 깔끔한지
+>2. 업데이트가 최근에 (1~2개월 정도) 되었어 야함<지속적인 개발>
+>3. 실행이 편해야 함.
+
+#Google Summer Code
+>https://summerofcode.withgoogle.com/
+여기서 프로젝트 찾아도 좋습니다.
+
+#반드시 지켜야 할 것
+>코딩 스타일 
+>http://jongwook.kim/google-styleguide/trunk/cppguide.xml
+
+> Line은 80자 안에서
+> tap은 설정을 따로해서, 스페이스 2번이나 4번으로 변경되게 해줘야함
+> 오픈소스에서 if(&&) 혹은 if(if())뭘 선호하는지, 알고 그대로 적용해줘야함
+
+{
+  "workbench.iconTheme" :
+  "editor.insertSpaces":
+  "editor.tabSize":4,
+  "editor.detectIndentation" : 
+}
+
+문제 풀 때 :
+1. 제약 :
+> 가,
+2. idea
+>시간, 공간 복잡도
+3. test case
+>
+4. 평가
