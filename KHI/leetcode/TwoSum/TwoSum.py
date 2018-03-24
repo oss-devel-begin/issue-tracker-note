@@ -5,6 +5,4 @@ class Solution:
             for j in range(i+1,len(nums)):
                 b = nums[j]
                 if (a+b == target):
-                    return i, j
-                    
-        
+                    return i, j          

@@ -142,11 +142,5 @@ Script
   "editor.detectIndentation" : 
 }
 
-문제 풀 때 :
-1. 제약 :
-> 가,
-2. idea
->시간, 공간 복잡도
-3. test case
->
-4. 평가
+
+
