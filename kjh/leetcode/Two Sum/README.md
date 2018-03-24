@@ -1,4 +1,5 @@
 # Two Sum
+## o(n^2) Solution
 ```cpp
 class Solution {
 public:
@@ -20,7 +21,7 @@ public:
     }
 };
 ```
-
+## o(n) Solution
 ```cpp
 vector<int> twoSum(vector<int> &numbers, int target)
 {
