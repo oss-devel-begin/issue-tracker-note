@@ -141,6 +141,3 @@ Script
   "editor.tabSize":4,
   "editor.detectIndentation" : 
 }
-
-
-
