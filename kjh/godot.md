@@ -19,7 +19,7 @@
  - [Godot Download](https://godotengine.org/download/windows)
   
 ## 영상
- - [Sample]((https://godotengine.org/download/windows)
+ - [Sample](https://godotengine.org/download/windows)
  - [Official Tutorial](https://www.youtube.com/watch?v=ntYjl_obUDo&feature=youtu.be)
 
 ## 기여
