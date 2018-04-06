@@ -1,20 +1,23 @@
 # Godot
-°íµµ ¿£Áø(Godot Engine)Àº 2D ¹× 3D °ÔÀÓ Á¦ÀÛÀ» À§ÇÑ Å©·Î½º ÇÃ·§Æû °ÔÀÓ ¿£ÁøÀÌ´Ù.
+ê³ ë„ ì—”ì§„(Godot Engine)ì€ 2D ë° 3D ê²Œì„ ì œì‘ì„ ìœ„í•œ í¬ë¡œìŠ¤ í”Œë«í¼ ê²Œì„ ì—”ì§„ì´ë‹¤.
 
-## Áö¿ø ÇÃ·§Æû
- - µ¥½ºÅ©Å¾ : Linux, Mac, Windows
- - ¸ğ¹ÙÀÏ : Android, iOS
- - À¥ : HTML5
+## ì§€ì› í”Œë«í¼
+ - ë°ìŠ¤í¬íƒ‘ : Linux, Mac, Windows
+ - ëª¨ë°”ì¼ : Android, iOS
+ - ì›¹ : HTML5
 
-## ¶óÀÌ¼¾½º
+## ë¼ì´ì„¼ìŠ¤
  - MIT
 
-## Áö¿ø¾ğ¾î
- - GDScript(°íµµ½ºÅ©¸³Æ®, ÀÚÃ¼»ç¿ë ¾ğ¾î)
+## ì§€ì›ì–¸ì–´
+ - GDScript(ê³ ë„ìŠ¤í¬ë¦½íŠ¸, ìì²´ì‚¬ìš© ì–¸ì–´)
  - C++
  - C#
  - Visual Script
+ 
+ ## ì„¤ì¹˜
+ Â - [Godot Download](https://godotengine.org/download/windows)
 
-## ±â¿©
+## ê¸°ì—¬
  - [Contribute](http://docs.godotengine.org/en/latest/community/contributing/index.html)
  - [Code Style Guideline](http://docs.godotengine.org/en/latest/community/contributing/code_style_guidelines.html)
