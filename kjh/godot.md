@@ -15,8 +15,12 @@
  - C#
  - Visual Script
  
- ## 설치
-  - [Godot Download](https://godotengine.org/download/windows)
+## 설치
+ - [Godot Download](https://godotengine.org/download/windows)
+  
+## 영상
+ - [Sample]((https://godotengine.org/download/windows)
+ - [Official Tutorial](https://www.youtube.com/watch?v=ntYjl_obUDo&feature=youtu.be)
 
 ## 기여
  - [Contribute](http://docs.godotengine.org/en/latest/community/contributing/index.html)
