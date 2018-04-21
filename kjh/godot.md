@@ -16,8 +16,15 @@
  - Visual Script
  
 ## 설치
- - [Godot Download](https://godotengine.org/download/windows)
-  
+ - [윈도우에서 설치 Godot Download](https://godotengine.org/download/windows)
+
+### Source를 통한 설치
+ - 필요사항 : Python, Scons
+     1. Python 설치 후 Python을 통해 Scons 설치
+     2. Download 받은 Godot 경로로 이동
+     3. scons 입력
+     4. 해당 플랫폼에 맞춰 scons platform=[플랫폼] 입력(예 : scons platform=windows)
+ 
 ## 영상
  - [Sample](https://godotengine.org/download/windows)
  - [Official Tutorial](https://www.youtube.com/watch?v=ntYjl_obUDo&feature=youtu.be)
