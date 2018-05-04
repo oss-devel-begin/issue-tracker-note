@@ -151,3 +151,37 @@ Script
 나중에 한번 찾아보기
 
 >>>GeeksforGeeks 좋은 알고리즘 사이트입니다.
+
+#virtual box 세팅
+세팅시에 네트워크 설정을 통해서 내부통신을 열어줘야, 공유기없이 컴퓨터 안에서 통신이 가능해짐.
+설치 후에는 putty로 접속,
+id : sosegi
+pw : 0703
+
+**TIP:**
+
+Site : free code camp
+
+Tool : cloud9 
+
+눈팅 site :
+
+Google+ -> Open Source SOftware
+
+medium -> 기초적인 내용들이 많이 나옴
+
+reddit
+
+quora ->설명을 detail하게 잘함.
+
+hackr.io
+
+
+
+
+#Good Sites
+- Free Code Camp - 칸 아카데미 - leet code - hacker rank - Lint = The Definition of Coding Style
+
+
+
+udemycoupon에 강의들 공짜가 꽤 많이 있습니다.
