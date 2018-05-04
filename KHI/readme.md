@@ -2,13 +2,20 @@
 - Schedule -
 
 #5.5  - 커널 컨트리뷰션
+
 #5.12 - 휴강
+
 #5.19 - 외식 (장소는 정자역, 강남 양자 택일)
+
 #5.26 - linux - next
 
+
 #정적 분석툴 2개
+
 - cppcheck
+
 - clang
+
 
 정적분석툴로 살펴볼것들
 - unused variable
