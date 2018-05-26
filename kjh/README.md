@@ -1,7 +1,7 @@
-## Open source ±â¿©¸¦ À§ÇÑ ÁØºñ ÀÛ¾÷ ¹®¼­
-### È¯°æ ÁØºñ
-- WSL¸¦ windows 10¿¡ ¼³Ä¡
-  - [WSL ¼³Ä¡°úÁ¤ ºí·Î±×](https://joojy.net/p/20171224581)
+## Open source ê¸°ì—¬ë¥¼ ìœ„í•œ ì¤€ë¹„ ì‘ì—… ë¬¸ì„œ
+### í™˜ê²½ ì¤€ë¹„
+- WSLë¥¼ windows 10ì— ì„¤ì¹˜
+  - [WSL ì„¤ì¹˜ê³¼ì • ë¸”ë¡œê·¸](https://joojy.net/p/20171224581)
 
 ### Tools
 - ConEmu
@@ -14,7 +14,7 @@ $ sudo apt-get install git git-core
 - try git
  
 
-### git ±âº»
+### git ê¸°ë³¸
 
 - $git remote add upstream [url]
 - $git fetch upstream
@@ -22,8 +22,13 @@ $ sudo apt-get install git git-core
 - $git merge upstream/master
 - $git push origin master
 
-### Âü°í »çÀÌÆ®
-- [ÇÁ·Î±×·¡¹Ö ¾ğ¾î ÇĞ½À »çÀÌÆ® sololearn](https://www.sololearn.com)
-- [¸ğÁú¶ó ¿ÀÇÂ¼Ò½º Ã£±â what can i do for mozilla](whatcanidoformozilla.org)
-- [±¸±Û ¿ÀÇÂ¼Ò½º ÇÁ·ÎÁ§Æ®](https://opensource.google.com/projects/explore/featured)
-- [ÃÊº¸ÀÚ¸¦ À§ÇÑ ¿ÀÇÂ¼Ò½º Âü¿© CodeTriage](https://www.codetriage.com)
+### ì°¸ê³  ì‚¬ì´íŠ¸
+- [í”„ë¡œê·¸ë˜ë° ì–¸ì–´ í•™ìŠµ ì‚¬ì´íŠ¸ sololearn](https://www.sololearn.com)
+- [ëª¨ì§ˆë¼ ì˜¤í”ˆì†ŒìŠ¤ ì°¾ê¸° what can i do for mozilla](whatcanidoformozilla.org)
+- [êµ¬ê¸€ ì˜¤í”ˆì†ŒìŠ¤ í”„ë¡œì íŠ¸](https://opensource.google.com/projects/explore/featured)
+- [ì´ˆë³´ìë¥¼ ìœ„í•œ ì˜¤í”ˆì†ŒìŠ¤ ì°¸ì—¬ CodeTriage](https://www.codetriage.com)
+- [í•´ì»¤ë­í¬](https://hackerrank.com)
+- [leetcode](https://leetcode.com)
+- [ìë£Œìˆ˜ì§‘ì‚¬ì´íŠ¸1 Medium](https://medium.com)
+- [ìë£Œìˆ˜ì§‘ì‚¬ì´íŠ¸2 Reddit](https://reddit.com)
+- [ìë£Œìˆ˜ì§‘ì‚¬ì´íŠ¸3 Google+](https://plus.google.com)
