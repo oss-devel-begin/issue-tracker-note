@@ -1,0 +1,82 @@
+from keras.models import load_model
+from keras.preprocessing import image
+import matplotlib.pyplot as plt
+import numpy as np
+import os
+import numpy as np
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.layers import Flatten
+from keras.layers.convolutional import Conv2D
+from keras.layers.convolutional import MaxPooling2D
+from keras.preprocessing.image import ImageDataGenerator
+from keras import optimizers
+from PIL import Image
+
+# instance for image transformation (especially, rescale pixel value)
+pixel_normalize = ImageDataGenerator(rescale=1./255)
+
+# load training samples
+train_generator = pixel_normalize.flow_from_directory(
+    'C:/Users/User/Desktop/dysphagia_xray/test/changeimage/Train',
+    target_size =(224,224),
+    seed = 0,
+    batch_size = 64,
+    class_mode = 'binary')
+
+# test samples
+test_generator = pixel_normalize.flow_from_directory(
+    'C:/Users/User/Desktop/dysphagia_xray/test/changeimage/Test',
+    target_size =(224,224),
+    seed = 0,
+    batch_size = 64,
+    class_mode = 'binary')
+
+# validation samples
+val_generator = pixel_normalize.flow_from_directory(
+    'C:/Users/User/Desktop/dysphagia_xray/test/changeimage/Val',
+    target_size =(224,224),
+    seed = 0,
+    batch_size = 64,
+    class_mode = 'binary')
+
+model = Sequential()
+
+model.add(Conv2D(96, kernel_size = (11,11), strides = (4,4), activation = 'relu', input_shape=(224, 224, 3), padding = 'valid'))
+model.add(MaxPooling2D(pool_size = (2,2)))
+
+model.add(Conv2D(256, kernel_size = (5,5), strides = 1, activation = 'relu'))
+model.add(MaxPooling2D(pool_size = (2,2)))
+
+model.add(Conv2D(384, kernel_size = (3,3), strides = 1,activation = 'relu'))
+
+model.add(Conv2D(384, kernel_size = (3,3), strides = 1,activation = 'relu'))
+
+model.add(Conv2D(256, kernel_size = (3,3), strides = 1,activation = 'relu'))
+model.add(MaxPooling2D(pool_size = (2,2)))
+
+model.add(Flatten())
+model.add(Dense(4096, activation = 'relu'))
+model.add(Dense(4096, activation = 'relu'))
+
+# output layer
+model.add(Dense(2, activation = 'softmax'))
+
+# optimizer settings
+SGD = optimizers.SGD(lr = 0.001, decay = 0.0005, momentum=0.9)
+model.compile(loss = 'binary_crossentropy', optimizer = 'SGD', metrics = ['accuracy'])
+
+# training
+model.fit_generator(train_generator, epochs = 1, validation_data=val_generator, validation_steps=1)
+
+
+print("-- Evaluate --")
+scores = model.evaluate_generator(test_generator)
+print("%s: %.2f%%" %(model.metrics_names[1], scores[1]*100))
+output = model.predict_generator(test_generator,  verbose = 1)
+np.set_printoptions(formatter = {'float': lambda x: "{0:0.3f}".format(x)}) 
+
+print (test_generator.filenames)
+print(test_generator.shuffle)
+print (scores)
+print (output.shape)
