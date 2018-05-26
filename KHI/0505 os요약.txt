@@ -1,0 +1,91 @@
+make ARCH=x86_64 -j&
+
+built -in    (kernel image랑 한몸) - 사용만 하면 되는 상태
+module (ko)    (____ko driver..) ko = kernel object - 주기적으로 변경해서 바꿔 낄 수가 있음 [insmod/rmmod]
+
+make drivers/staging/dgap/dgap.o
+
+아래의 2개의 Architecture들은 다른 binary들을 생성해줘야 함. 서로 호환이 안 됨
+x86_64 
+ARM cpu
+
+staging 에서 결과가 좋으면 drivers로 옮겨가서 실제로 실행하게 됩니다.
+
+staging/ 에서 사용이 잘되는것들은
+drivers/ 로 옮겨지게 됩니다.
+
+repo
+
+Linux tobal
+Greg.			  Andrew.  Taejun 
+drivers staging	
+
+linux는
+대답이 없으면 merge가 되고, 대답이 많이 달리면 문제가 많은 겁니다.
+보통은 대답이 없으면 merge가 안되고, merge가 되려면 대답이 와야함
+
+kernel = 1tab으로 8byte(space)를 사용함
+c++ / java = 2space / 4space
+그리고, 80자를 기준으로 잘라줘야함.
+
+커널은 if를 밑처럼 만듭니다.
+
+if (x) {
+
+}
+
+do while도
+
+do{
+body of loop
+}while
+
+if- else문도 마찬가지입니다.
+if(x){
+
+}else if(){
+
+}else{
+
+}
+이런 식으로 씁니다.
+
+if문에 문장이 하나인 경우에는
+if (p)
+	return true
+	
+이런 식으로 해도 됩니다.
+
+if (a)
+	return a
+else 
+	return b
+	
+공백 : 
+1. for (i=0; i<10; i++)
+2. for(i=0;i<10;i++)
+
+s = sizeof(struct file)
+커널은 2번처럼 해줘야 합니다. 
+
+포인터
+char p
+char *p
+char* p
+커널은 char *p같은 식으로 해줘야 합니다.
+
+변수이름 
+countValue   [python, c++, java]
+count_value  [c]
+
+
+주석 - 
+//------ 한줄
+
+/*
+ *
+ *여러줄일 경우에
+ *
+ *
+ */
+ 

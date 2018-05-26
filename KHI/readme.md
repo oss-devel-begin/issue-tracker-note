@@ -1,153 +1,44 @@
-##오픈 소스 기여
-### 환경 준비
-- WSL
-  -[설치 과정 블로그](https://joojy.net/p/20171224581)
+- Schedule -
 
-### Tools
-- Visual Studio Code
-- git
-```bash
-$ sudo apt-get instal git git-core
-```
-- code Triage
-- github
-- try git
+#5.5  - 커널 컨트리뷰션
 
-#3월 9일
-conemu
-sudo apt-get install git git-core tig
+#5.12 - 휴강
 
-https://www.codetriage.com/
-projects.apache.org/projects.html
-https://opensource.google.com/
+#5.19 - 외식 (장소는 정자역, 강남 양자 택일)
 
-UBUNTU(좋음) vs Windows WSL(i/o가 구림, 설치가 안되는 것들이 있음) vs Docker on windows vs Virtual Machine vs bare-metal linux
-
-1. 프로젝트를 찾기
-2. 빌드 방법 찾기, 문서 찾기
-3. 빌드 후에 이슈들 확인하기
-4. 이슈 해결하기
-**처음에 해결할 때는, 재현이 가능한 오류인지 반드시 확인
-재현이 힘들면 버리는게 좋습니다.**
-
-git -
-add
-commit
-------- local
-push
-------- remote
-
-thttps://try.github.io/levels/1/challenges/6 꼭 해보세요
-https://learngitbranching.js.org/
-
-1. cd /mnt/c/
-2. mkdir prj-001
-3. cd prj-001
-4. git clone 
-5. cd ----
+#5.26 - linux - next
 
 
-mkdir A
-cd A
-readme.md
-git status
-git add 
-git config --global user.name "Hyun il Kim"
-git config --global user.email "gusdlf93@naver.com"
-git commit -m "Initial Commit"
-git push origin master
+#정적 분석툴 2개
 
-git remote add upstream (URL)
-git fetch upstream
-git branch -a
-//origin/master, upstream/master
-git merge upstream/master  //로컬에 반영
-git log
-git push origin master
+- cppcheck
 
-컨플릭이 발생하면, 같은 파일을 수정한 사람이 있단 것.
-pr취소하고, 
-
-#3월 17일
-
-https://opensource.guide/ko/
-https://www.codetriage.com/
-
-효과 주기
-#
-##
--    .
--    .
-```  xxx ```
-[]
-* xxx *
->
->>
->>>
+- clang
 
 
-Language
->C++  - Tensorflow
+정적분석툴로 살펴볼것들
+- unused variable
+- memory leek : malloc free
 
->Python - ansible
+### keras 분석 정리 하세요
+Contributting 분석 정리에 따라서 error를 발견할 확률이 높아짐.
 
->C# - django
+1. 잘못된 api 사용에 의한 경고나코멘트
+2. 정적 분석툴로 나온 데이터에 대해서 해결 해보기
+- 브랜치 만들어서 거기다가 적용
 
->java - spring
+#documentation에 어떤 조합으로 쓰면 문제가 발생하는지
+code의 사용법을 이런 조합으로 사용해야 한다라는 것을 만들어서 보내면 좋겠습니다.
+사용하면 안되는 조합들을 올려줘도 좋을 거 같습니다.
 
+# linux - kernel 
+1) 글자가 한줄에 xx자 이상일 때, 
+2) 초기화가 안되어있으면 return시에 garbage가 리턴되서 문제가 발생합니다.
 
-Application
->Android
->Window
->Linux
+절대 git push origin 쓰지마세요
+git fetch origin입니다 push쓰면 한세월걸려요
 
-Server
-Engine
->Spring
->WebServer 
+HW.현재 어떤 방향으로 진행중인지하고, 포커싱 결과들에 대해서 전체적으로 플로우 차트 하나 만들어서 올리기
 
-System
- >Ansible
- >Jenkis
- >Cloud 
-
-Media
- >ffmpeg
- >GStreamer
-
-Script
-> bash
-
-#프로그램 찾을 때 중요한 것 :
->1. Document가 얼마나 깔끔한지
->2. 업데이트가 최근에 (1~2개월 정도) 되었어 야함<지속적인 개발>
->3. 실행이 편해야 함.
-
-#Google Summer Code
->https://summerofcode.withgoogle.com/
-여기서 프로젝트 찾아도 좋습니다.
-
-#반드시 지켜야 할 것
->코딩 스타일 
->http://jongwook.kim/google-styleguide/trunk/cppguide.xml
-
-> Line은 80자 안에서
-> tap은 설정을 따로해서, 스페이스 2번이나 4번으로 변경되게 해줘야함
-> 오픈소스에서 if(&&) 혹은 if(if())뭘 선호하는지, 알고 그대로 적용해줘야함
-
-{
-  "workbench.iconTheme" :
-  "editor.insertSpaces":
-  "editor.tabSize":4,
-  "editor.detectIndentation" : 
-}
-
-#Trygit & Learning git branch
->언젠가 해보기
-
-#Map 
-#Unordered Map
-#red-black tree
-나중에 한번 찾아보기
-
->>>GeeksforGeeks 좋은 알고리즘 사이트입니다.
+###naver smtp 서버 사용법 알아오세욥###
+pop3
